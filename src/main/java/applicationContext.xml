@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2014 - Open Source Geospatial Foundation. All rights reserved. 
+  This code is licensed under the GPL 2.0 license, available at the root application 
+  directory. -->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+  <bean class="au.org.aurin.epavic.EpaVicStatus" />
+
+  <bean id="epaVicStorePanel" class="org.geoserver.web.data.resource.DataStorePanelInfo">
+    <property name="id" value="epaVicDatastore" />
+    <property name="factoryClass" value="au.org.aurin.epavic.EpaVicDatastore" />
+    <property name="iconBase" value="org.geoserver.web.GeoServerApplication" />
+  </bean>
+</beans>
